@@ -1,0 +1,22 @@
+# Ignore environment files
+.env
+
+# Ignore node_modules
+node_modules/
+
+# Ignore build artifacts
+dist/
+build/
+
+# Ignore editor settings
+.vscode/
+
+# Ignore logs
+*.log
+
+# Ignore system files
+.DS_Store
+
+# Ignore package manager lock files (optional if you only use pnpm)
+package-lock.json
+yarn.lock
