@@ -1,3 +1,4 @@
+// src\app\dashboard\page.tsx
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import CompanyForm from '@/components/CompanyForm';

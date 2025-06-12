@@ -33,7 +33,6 @@ export const useAuthStore = create<AuthState>((set) => ({
   fetchUser: async () => {
     try {
       const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/auth/login`, {
-        credentials: 'include',
       });
 
       if (!res.ok) throw new Error('Failed to fetch user');

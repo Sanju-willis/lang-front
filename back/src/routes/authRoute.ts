@@ -1,3 +1,4 @@
+// src\routes\authRoute.ts
 import { Router} from 'express';
 import passport from 'passport';
 import asyncHandler from 'express-async-handler';

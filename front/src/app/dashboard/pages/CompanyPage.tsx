@@ -1,4 +1,4 @@
-// src/app/dashboard/pages/CompanyPage.tsx
+// src\app\dashboard\pages\CompanyPage.tsx
 'use client';
 
 import { useAuthStore } from '@/stores/useAuthStore';

@@ -1,4 +1,4 @@
-// src\app\signup\page.tsx
+// src\app\page.tsx
 export default function SignupPage() {
   return (
     <main className="h-screen flex items-center justify-center">

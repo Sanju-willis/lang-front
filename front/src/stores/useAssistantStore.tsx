@@ -27,7 +27,6 @@ export const useAssistantStore = create<AssistantState>((set) => ({
       const res = await fetch(`${process.env.NEXT_PUBLIC_BACKEND_URL}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
         body: JSON.stringify({ input, stage, step }),
       });
 
