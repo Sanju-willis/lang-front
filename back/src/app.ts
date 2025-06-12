@@ -3,7 +3,7 @@ import express from 'express';
 import cors from 'cors';
 import passport from 'passport';
 import './config/passport';
-
+import authRoute from './routes/authRoute';
 
 
 
@@ -17,7 +17,7 @@ app.use(passport.initialize());
 
 
 
-
+app.use('/auth', authRoute );
 
 
 

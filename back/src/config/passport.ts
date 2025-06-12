@@ -5,7 +5,6 @@ import dotenv from 'dotenv';
 import User from '../models/User';
 import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';
 import { handleFacebookLogin } from '../services/authService';
-import { dataLog   } from '../utils/debuglog';
 
 dotenv.config();
 
