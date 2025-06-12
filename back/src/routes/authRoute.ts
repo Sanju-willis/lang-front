@@ -2,7 +2,7 @@
 import { Router} from 'express';
 import passport from 'passport';
 import asyncHandler from 'express-async-handler';
-import { handleFacebookCallback } from '../controllers/authController';
+import { handleFacebookCallback, handleLoginCheck } from '../controllers/authController';
 
 const router = Router();
 
@@ -26,5 +26,7 @@ router.get(
   passport.authenticate('facebook', { session: false, failureRedirect: '/signup' }),
   asyncHandler(handleFacebookCallback)
 );
+
+router.get('/login', passport.authenticate('jwt', { session: false }), handleLoginCheck);
 
 export default router;
