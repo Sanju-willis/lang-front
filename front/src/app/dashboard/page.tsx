@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import CompanyForm from '@/components/CompanyForm';
 import CompanyPage from './pages/CompanyPage';
-import ProductsPage from './pages/ProductsPage';
+import ProductsPage from './pages/ProductPage';
 import { useAuthStore } from '@/stores/useAuthStore';
 import { useAssistantStore } from '@/stores/useAssistantStore';
 
